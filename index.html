@@ -1,10 +1,16 @@
 <!DOCTYPE html>
-<html lang="ar">
+<html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>جمعية النور للتنمية</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="this is a website that contain information about association of annor">
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="manifest" href="images/site.webmanifest">
     <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&family=Courier+Prime:wght@400;700&family=Jomhuria&family=Open+Sans:wght@300;400;500;600;700;800&family=PT+Sans:wght@400;700&family=Poppins:wght@200;300;400;500;600;700&family=Raleway:wght@300;400;600;700;800;900&family=Varela+Round&family=Work+Sans:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
@@ -12,14 +18,16 @@
     <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="css/normalize.css">
     <!-- main style -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
-    <header class="header">
+    <header class="header" id="home">
         <div class="container">
             <div class="header-content">
                 <div class="logo">
-                    <h4>جمعية النور للتنمية</h4>
+                    <h4>
+                        <a href="#" aria-label="logo title">جمعية النور للتنمية</a>
+                    </h4>
                 </div>
                 <nav class="nav-bar">
                     <div class="nav-icon">
@@ -28,34 +36,44 @@
                         <div class="line3"></div>
                     </div>
                     <ul class="header-links">
-                        <li><a class="active" href="#home">الرئيسية</a></li>
-                        <li><a href="#services">الخدمات</a></li>
-                        <li><a href="#images">الصور</a></li>
-                        <li><a href="#about">مايخصنا</a></li>
-                        <li><a href="#contact">تواصل معنا</a></li>
+                        <li>
+                            <a class="active" href="#home" aria-label="home">الرئيسية</a>
+                        </li>
+                        <li>
+                            <a href="#services" aria-label="services">الخدمات</a>
+                        </li>
+                        <li>
+                            <a href="#images" aria-label="images">الصور</a>
+                        </li>
+                        <li>
+                            <a href="#about" aria-label="about">مايخصنا</a>
+                        </li>
+                        <li>
+                            <a href="#contact" aria-label="contact">تواصل معنا</a>
+                        </li>
                     </ul>
                 </nav>
             </div>
         </div>
     </header>
-    <div class="home" id="home">
+    <section class="home">
         <div class="container">
             <div class="home-container">
                 <div class="home-img">
-                    <img src="images/WhatsApp Image 2022-08-13 at 9.19.10 AM.jpeg">
+                    <img src="images/hero.webp" alt="hero image" loading="lazy">
                 </div>
                 <div class="home-content">
-                    <h1>جمعية النور للتنمية</h1>
                     <p>تتشرف جمعية النور للتنمية ان تطلب من المحسنين تقديم الدعم من اجل اتمام بناء وتجهيز مسجد البعارير التحتانيين.<br>قال صلى الله عليه وسلم:<span> <i class="fa-solid fa-angles-right"></i>من بنى مسجدا بنى الله له بيتا في الجنة<i class="fa-solid fa-angles-left"></i></span></p>
-                    <p>رقم الحساب البنكي:</p>
+                    <h4>رقم الحساب البنكي:</h4>
                     <p>ASS ANNOR POUR DEV DR BAARIR TAHTANIENE</p>
-                    <p>(Rib) 225010074902193651010805</p>
-                    <p>للتواصل والمزيد من المعلومات: 0667.910039</p>
+                    <span>(Rib) 225010074902193651010805</span>
+                    <h4>للتواصل والمزيد من المعلومات:</h4>
+                    <span>0667910039</span>
                     <span></span>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
     <section class="services padd-y" id="services">
         <div class="container">
             <h2 class="special-heading">الخدمات</h2>
@@ -63,55 +81,52 @@
                 <div class="service-content">
                     <i class="fa-solid fa-book-open-reader fa-2x"></i>
                     <p>انطلقت بحمد الله وتوفيقه اشغال بناء مسجد النور باصلاح الشطر الاول من المسجد المتعلقق بالواجهة الامامية حيث تم بناء الدرج المؤدي الى السطح (السترة). اضافة الى هذا تم بناء اقواس الابواب.</p>
-                    <a href="#">اقرا المزيد <i class="fa-solid fa-arrow-left-long"></i></a>
+                    <a href="#" aria-label="service1">اقرا المزيد <i class="fa-solid fa-arrow-left-long"></i></a>
                 </div>
                 <div class="service-content">
                     <i class="fa-solid fa-wand-magic-sparkles fa-2x"></i>
                     <p>وقد تم تنفيذ الاشغال في ظروف جيدة وتحت اشراف لجنة مختصة. اضافة الى التتبع اليومي للانجاز من طرف اعضاء الجمعية.</p>
-                    <a href="#">اقرا المزيد <i class="fa-solid fa-arrow-left-long"></i></a>
+                    <a href="#" aria-label="service2">اقرا المزيد <i class="fa-solid fa-arrow-left-long"></i></a>
 
                 </div>
                 <div class="service-content">
                     <i class="fa-brands fa-pagelines fa-2x"></i>
                     <p>بعد اتمام المرحلة الاولى من بناء واجهة المسجد، تم تغيير مسجد النساء وتخصيص مسساحته للرجال. وبذلك تم نقل مسجد النساء بجانب المسجد وتم ترميمه بالسيراميك والجبس.</p>
-                    <a href="#">اقرا المزيد <i class="fa-solid fa-arrow-left-long"></i></a>
+                    <a href="#" aria-label="service3">اقرا المزيد <i class="fa-solid fa-arrow-left-long"></i></a>
                 </div>
             </div>
             <p class="type"></p>
         </div>
     </section>
-    <section class="images padd-y" id="images">
+    <section class="images padd-y bg-gray" id="images">
         <div class="container">
             <span><i class="fa-solid fa-angle-up"></i></span>
             <h2 class="special-heading">الصور</h2>
             <div class="image-info">
                 <div class="image-container">
                     <div class="image-content">
-                        <img src="images/WhatsApp Image 2022-08-13 at 9.19.10 AM.jpeg">
+                        <img src="images/image1.webp" alt="image 1" loading="lazy">
                     </div>
                     <div class="image-content">
-                        <img src="images/WhatsApp Image 2022-08-15 at 10.31.29 AM (1).jpeg">
+                        <img src="images/image2.webp" alt="image 2" loading="lazy">
                     </div>
                     <div class="image-content">
-                        <img src="images/WhatsApp Image 2022-08-15 at 10.31.29 AM (2).jpeg">
+                        <img src="images/image3.webp" alt="image 3" loading="lazy">
                     </div>
                     <div class="image-content">
-                        <img src="images/WhatsApp Image 2022-08-15 at 10.31.29 AM.jpeg">
+                        <img src="images/image4.webp" alt="image 4" loading="lazy">
                     </div>
                     <div class="image-content">
-                        <img src="images/WhatsApp Image 2022-08-15 at 10.31.30 AM (1).jpeg">
+                        <img src="images/image5.webp" alt="image 5" loading="lazy">
                     </div>
                     <div class="image-content">
-                        <img src="images/WhatsApp Image 2022-08-15 at 10.31.30 AM.jpeg">
+                        <img src="images/image6.webp" alt="image 6" loading="lazy">
                     </div>
                     <div class="image-content">
-                        <img src="images/IMG-20220823-WA0001.jpg">
+                        <img src="images/image7.webp" alt="image 7" loading="lazy">
                     </div>
                     <div class="image-content">
-                        <img src="images/IMG-20220823-WA0003.jpg">
-                    </div>
-                    <div class="image-content">
-                        <img src="images/IMG-20220823-WA0004.jpg">
+                        <img src="images/image8.webp" alt="image 8" loading="lazy">
                     </div>
                 </div>
             </div>
@@ -132,12 +147,12 @@
                         <p>ثم شرع في دراسة هذه النقط في جو ساده التفاهم والاحساس بروح المسؤولية</p>
                     </div>
                     <div class="about-img">
-                        <img src="images/IMG-20220823-WA0004.jpg">
+                        <img src="images/about1.webp" alt="about image 1" loading="lazy">
                     </div>
                 </div>
                 <div class="about-content">
                     <div class="about-img">
-                        <img src="images/WhatsApp Image 2022-08-13 at 9.19.10 AM.jpeg">
+                        <img src="images/hero.webp" alt="about image 2" loading="lazy">
                     </div>
                     <div class="about-info">
                         <p>بعد ذلك انتقل الجمع العام الى عملية انتخاب اعضاء مكتب الجمعية والتي اسفرت نتيجتها على التالي:</p>
@@ -158,7 +173,7 @@
             </div>
         </div>
     </section>
-    <section class="contact padd-y" id="contact">
+    <section class="contact padd-y bg-gray" id="contact">
         <div class="container">
             <h2 class="special-heading">تواصل معنا</h2>
             <div class="contact-container">
@@ -186,22 +201,23 @@
             </div>
         </div>
     </section>
-    <footer class="footer padd-y">
+    <footer class="footer">
         <div class="container">
             <div class="footer-content">
                 <h4>جمعية النور للتنمية</h4>
                 <p>حقوق النشر والطبع محفوظة</p>
-                <p>Made with <i class="fa-solid fa-heart"></i> &copy; 2022</p>
+                <p>Made with <i class="fa-solid fa-heart"></i> By <span>Youssef</span></p>
+                <p class="copyright">&copy; <span id="year"></span></p>
                 <div class="footer-links">
-                    <a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-                    <a href="https://www.Whatsapp.com" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
-                    <a href="https://www.youtube.com" target="_blank"><i class="fa-brands fa-youtube"></i></a>
-                    <a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.facebook.com" target="_blank" aria-label="facebook"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.Whatsapp.com" target="_blank" aria-label="whatsapp"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="https://www.youtube.com" target="_blank" aria-label="youtube"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="https://www.instagram.com" target="_blank" aria-label="instagram"><i class="fa-brands fa-instagram"></i></a>
                 </div>
             </div>
         </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-    <script src="js/main.js"></script>
+    <script src="js/main.min.js"></script>
 </body>
 </html>
